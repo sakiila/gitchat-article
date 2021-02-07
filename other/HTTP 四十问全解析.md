@@ -11,7 +11,7 @@ HTTP 从客户端到服务器端等一系列运作流程提供规范，是目前
 3.  HTTP 是一种不保存状态的协议
 4.  HTTP 通过使用 URI 来定位互联网的资源
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/582438b0-1fb2-11ea-a178-35853cb6bb41)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/582438b0-1fb2-11ea-a178-35853cb6bb41)
 
 #### 2. 什么是 TCP/IP？
 
@@ -35,7 +35,7 @@ TCP/IP 协议族可以分为 4 层，分别是应用层、传输层、网络层�
 
 4. 链路层（数据链路层）：硬件上的处理均在链路层的范围内。如：操作系统、硬件设备的驱动、网卡等。
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/7e786940-20a3-11ea-ac8f-1341eb8cd629)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/7e786940-20a3-11ea-ac8f-1341eb8cd629)
 
 #### 4. TCP/IP 协议族分层有什么优点？
 
@@ -52,7 +52,7 @@ OSI 则分为 7 层：应用层、表示层、会话层、运输层、网络层�
 
 对应关系如下：
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/a1e61530-20a3-11ea-ae7a-b93731f46de7#pic_center)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/a1e61530-20a3-11ea-ae7a-b93731f46de7#pic_center)
 
 #### 6. 什么是 TCP/IP 通信传输流？
 
@@ -61,7 +61,7 @@ OSI 则分为 7 层：应用层、表示层、会话层、运输层、网络层�
 *   发送端的顺序是：应用层 -> 传输层 -> 网络层 -> 链路层；
 *   接受端的顺序是：链路层 -> 网络层 -> 传输层 -> 应用层。
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/881c2200-1fdd-11ea-bf95-03a6caedb034)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/881c2200-1fdd-11ea-bf95-03a6caedb034)
 
 #### 7. TCP/IP 协议族中的 IP 协议
 
@@ -75,7 +75,7 @@ IP 之间的通信是依赖于 MAC 地址的，在网络通信的过程中，根
 
 TCP 协议提供可靠的字节流服务，主要是通过采用三次握手的策略来确保传输数据的准确性的。
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/b793d8f0-2133-11ea-896e-d5e18961e76f#pic_center)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/b793d8f0-2133-11ea-896e-d5e18961e76f#pic_center)
 
 用 TCP 协议将数据包发送之后，它会向对方确认是否成功送达。握手过程中使用了 TCP 的标志（flag）——SYN（synchronize）和 ACK（acknowledgement）。
 
@@ -90,11 +90,11 @@ DNS 全称为 Domain Name System。
 
 DNS 协议与 HTTP 一样位于应用层，主要负责将域名和 IP 之间的相互解析。
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/490d7c00-20a3-11ea-8115-4d9350c05094#pic_center)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/490d7c00-20a3-11ea-8115-4d9350c05094#pic_center)
 
 #### 10. IP、TCP、DNS 和 HTTP 的关系
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/e06fe660-2133-11ea-8d08-f9b3177c2dcf)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/e06fe660-2133-11ea-8d08-f9b3177c2dcf)
 
 #### 11. URI 和 URL
 
@@ -126,11 +126,11 @@ HTTP 协议交互的信息被称为 HTTP 报文。报文大致可以分为报文
 
 1. 客户端的 HTTP 报文被称为请求报文
 
-![在这里插入图片描述](https://images.gitbook.cn/22453b80-2134-11ea-b66f-4fc46eb9bdac#pic_center)![在这里插入图片描述](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/22453b80-2134-11ea-b66f-4fc46eb9bdac#pic_center)
 
 2. 服务器端的 HTTP 报文为响应报文
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/6551d820-2134-11ea-905a-8f74a5162e2d)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/6551d820-2134-11ea-905a-8f74a5162e2d)
 
 由上可知，请求报文和相应报文都是由请求行、状态行、首部字段和其他组成。
 
@@ -177,7 +177,7 @@ Range:bytes=1001-
 内容协商包括：服务器驱动协商、客户端驱动协商和透明协商三种。
 
 1.  服务器驱动协商：由服务器端进行内容协商。以请求的首部字段为参考，在服务器端自动处理。但对用户来说，以浏览器发送的信息作为判定的依据，并不一定能筛选出最优内容。
-2.  客户端缺东协商：﻿由客户端进行内容协商的方式。用户从浏览器显示的可选项列表中手动选择。还可以利用 JavaScript 脚本在 Web 页面上自动进行上述选择。比如按 OS 的类型或浏览器类型，自行切换成 PC 版页面或手机版页面。
+2.  客户端驱动协商：由客户端进行内容协商的方式。用户从浏览器显示的可选项列表中手动选择。还可以利用 JavaScript 脚本在 Web 页面上自动进行上述选择。比如按 OS 的类型或浏览器类型，自行切换成 PC 版页面或手机版页面。
 3.  透明协商：是服务器驱动和客户端驱动的结合体，是由服务器端和客户端各自进行内容协商的一种方法。
 
 #### 20. 基于 HTTP 的功能追加的协议有哪些？
@@ -243,11 +243,11 @@ HTTP 协议的请求和响应报文中必定包含 HTTP 首部。首部内容为
 
 在请求中，HTTP 报文由方法、URI、HTTP 版本、HTTP 首部字段等部分构成。
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/809006c0-2134-11ea-896e-d5e18961e76f)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/809006c0-2134-11ea-896e-d5e18961e76f)
 
 在响应中，HTTP 报文由 HTTP 版本、状态码（数字和原因短语）、HTTP 首部字段 3 部分构成。
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/ac48f560-2134-11ea-ae7a-b93731f46de7#pic_center)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/ac48f560-2134-11ea-ae7a-b93731f46de7#pic_center)
 
 #### 2. 介绍一下 HTTP 首部字段，以及构成方式
 
@@ -323,11 +323,11 @@ HTTP 协议的请求和响应报文中必定包含 HTTP 首部。首部内容为
 
 1. HTTP 加上加密处理和认证以及完整性保护后即是 HTTPS
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/b173a1b0-2135-11ea-85be-71854b2ff6dc#pic_center)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/b173a1b0-2135-11ea-85be-71854b2ff6dc#pic_center)
 
 2. HTTPS 是身披 SSL 外壳的 HTTP
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/9ae813c0-2137-11ea-905a-8f74a5162e2d#pic_center)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/9ae813c0-2137-11ea-905a-8f74a5162e2d#pic_center)
 
 #### 3. 什么是相互交换密钥的公开密钥加密技术
 
@@ -335,11 +335,11 @@ HTTP 协议的请求和响应报文中必定包含 HTTP 首部。首部内容为
 
 1. 使用公开密钥加密方式，安全地交换在稍后的共享密钥加密中要使用的密钥
 
-![蚂蚁小能手资源网](https://images.gitbook.cn/584b7d60-213f-11ea-ae7a-b93731f46de7#pic_center)![蚂蚁小能手资源网](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/584b7d60-213f-11ea-ae7a-b93731f46de7#pic_center)
 
 2. 确保交换的密钥是安全的前提下，使用共享密钥加密方式进行通信。
 
-![在这里插入图片描述](https://images.gitbook.cn/cc67ea80-213f-11ea-8d08-f9b3177c2dcf)![在这里插入图片描述](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/cc67ea80-213f-11ea-8d08-f9b3177c2dcf)
 
 #### 4. 请介绍一下 HTTPS 的安全通信机制
 

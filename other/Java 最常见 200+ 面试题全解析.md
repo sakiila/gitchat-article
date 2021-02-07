@@ -21,7 +21,7 @@
 
 本文分为十九个模块，分别是： **Java 基础、容器、多线程、反射、对象拷贝、Java Web 、异常、网络、设计模式、Spring/Spring MVC、Spring Boot/Spring Cloud、Hibernate、MyBatis、RabbitMQ、Kafka、Zookeeper、MySQL、Redis、JVM** ，如下图所示：
 
-![模块图](https://images.gitbook.cn/f3c480e0-3be2-11e9-82f8-0f2e500ca934)![模块图](https://images.gitbook.cn/f3c480e0-3be2-11e9-82f8-0f2e500ca934)
+![模块图](https://images.gitbook.cn/f3c480e0-3be2-11e9-82f8-0f2e500ca934)
 
 共包含 208 道面试题，本文的宗旨是为读者朋友们整理一份详实而又权威的面试清单，下面一起进入主题吧。
 
@@ -45,7 +45,7 @@
 
 代码示例：
 
-```
+```java
 String x = "string";
 String y = "string";
 String z = new String("string");
@@ -63,7 +63,7 @@ equals 本质上就是 ==，只不过 String 和 Integer 等重写了 equals 方
 
 首先来看默认情况下 equals 比较一个有相同值的对象，代码如下：
 
-```
+```java
 class Cat {
     public Cat(String name) {
         this.name = name;
@@ -87,7 +87,7 @@ System.out.println(c1.equals(c2)); // false
 
 输出结果出乎我们的意料，竟然是 false？这是怎么回事，看了 equals 源码就知道了，源码如下：
 
-```
+```java
 public boolean equals(Object obj) {
         return (this == obj);
 } 
@@ -97,7 +97,7 @@ public boolean equals(Object obj) {
 
 那问题来了，两个相同值的 String 对象，为什么返回的是 true？代码如下：
 
-```
+```java
 String s1 = new String("老王");
 String s2 = new String("老王");
 System.out.println(s1.equals(s2)); // true 
@@ -105,7 +105,7 @@ System.out.println(s1.equals(s2)); // true
 
 同样的，当我们进入 String 的 equals 方法，找到了答案，代码如下：
 
-```
+```java
 public boolean equals(Object anObject) {
     if (this == anObject) {
         return true;
@@ -139,7 +139,7 @@ public boolean equals(Object anObject) {
 
 代码示例：
 
-```
+```java
 String str1 = "通话";
 String str2 = "重地";
 System. out. println(String. format("str1：%d | str2：%d",  str1. hashCode(),str2. hashCode()));
@@ -148,7 +148,7 @@ System. out. println(str1. equals(str2));
 
 执行的结果：
 
-```
+```java
 str1：1179395 | str2：1179395
 
 false 
@@ -188,7 +188,7 @@ StringBuffer 和 StringBuilder 最大的区别在于，StringBuffer 是线程安
 
 示例代码：
 
-```
+```java
 // StringBuffer reverse
 StringBuffer stringBuffer = new StringBuffer();
 stringBuffer. append("abcdefg");
@@ -219,7 +219,7 @@ System. out. println(stringBuilder. reverse()); // gfedcba
 
 示例代码：
 
-```
+```java
 abstract class Cat {
     public static void sayHi() {
         System. out. println("hi~");
@@ -238,7 +238,7 @@ abstract class Cat {
 
 不能，定义抽象类就是让其他类继承的，如果定义为 final 该类就不能被继承，这样彼此就会产生矛盾，所以 final 不能修饰抽象类，如下图所示，编辑器也会提示错误信息：
 
-![编译器保存图](https://images.gitbook.cn/58edb860-3be3-11e9-af57-196eefd310b5)![编译器保存图](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/58edb860-3be3-11e9-af57-196eefd310b5)
 
 #### 14. 接口和抽象类有什么区别？
 
@@ -307,7 +307,7 @@ List、Set、Map 的区别主要体现在两个方面：元素是否有序、是
 
 三者之间的区别，如下表：
 
-![区别图](https://images.gitbook.cn/6e7001c0-3be3-11e9-af57-196eefd310b5)![区别图](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/6e7001c0-3be3-11e9-af57-196eefd310b5)
 
 #### 21. HashMap 和 Hashtable 有什么区别？
 
@@ -342,7 +342,7 @@ HashSet 是基于 HashMap 实现的，HashSet 底层使用 HashMap 来保存所�
 
 代码示例：
 
-```
+```java
 // list to array
 List<String> list = new ArrayList<String>();
 list. add("王磊");
@@ -372,7 +372,7 @@ Arrays. asList(array);
 
 代码示例：
 
-```
+```java
 Queue<String> queue = new LinkedList<String>();
 queue. offer("string"); // add
 System. out. println(queue. poll());
@@ -392,7 +392,7 @@ Iterator 接口提供遍历任何 Collection 的接口。我们可以从一个 C
 
 Iterator 使用代码如下：
 
-```
+```java
 List<String> list = new ArrayList<>();
 Iterator<String> it = list. iterator();
 while(it. hasNext()){
@@ -415,7 +415,7 @@ Iterator 的特点是更加安全，因为它可以确保，在当前遍历的�
 
 示例代码如下：
 
-```
+```java
 List<String> list = new ArrayList<>();
 list. add("x");
 Collection<String> clist = Collections. unmodifiableCollection(list);
@@ -432,7 +432,7 @@ System. out. println(list. size());
 
 如下图：
 
-![并发和并行](https://images.gitbook.cn/44c76fe0-3d80-11e9-8c5c-8b54d319dad1)![并发和并行](https://images.gitbook.cn/44c76fe0-3d80-11e9-8c5c-8b54d319dad1)
+![](https://images.gitbook.cn/44c76fe0-3d80-11e9-8c5c-8b54d319dad1)
 
 并发 = 两个队列和一台咖啡机。
 
@@ -517,14 +517,6 @@ start() 方法用于启动线程，run() 方法用于执行线程的运行时代
 
 Callable 类型的任务可以获取执行的返回值，而 Runnable 执行无返回值。
 
-评论可见隐藏内容
-
-##### 此处内容[评论](#respond "评论")后可见
-
-温馨提示：此处为隐藏内容，需要评论或回复留言后可见
-
-[评论/回复](#respond)
-
 #### 47. 在 Java 程序中怎么保证多线程的运行安全？
 
 *   方法一：使用安全类，比如 Java. util. concurrent 下的类。
@@ -533,7 +525,7 @@ Callable 类型的任务可以获取执行的返回值，而 Runnable 执行无�
 
 手动锁 Java 示例代码如下：
 
-```
+```java
 Lock lock = new ReentrantLock();
 lock. lock();
 try {
@@ -1101,7 +1093,7 @@ hibernate 中每个实体类必须提供一个无参构造函数，因为 hibern
 
 RowBounds 表面是在“所有”数据中检索数据，其实并非是一次性查询出所有数据，因为 MyBatis 是对 jdbc 的封装，在 jdbc 驱动中有一个 Fetch Size 的配置，它规定了每次最多从数据库查询多少条数据，假如你要查询更多数据，它会在你执行 next()的时候，去查询更多的数据。就好比你去自动取款机取 10000 元，但取款机每次最多能取 2500 元，所以你要取 4 次才能把钱取完。只是对于 jdbc 来说，当你调用 next()的时候会自动帮你完成查询工作。这样做的好处可以有效的防止内存溢出。
 
-Fetch Size 官方相关文档：[http://t](http://t). cn/EfSE2g3
+Fetch Size 官方相关文档：http://t.cn/EfSE2g3 
 
 #### 128. MyBatis 逻辑分页和物理分页的区别是什么？
 
@@ -1157,7 +1149,7 @@ MyBatis 自定义插件针对 MyBatis 四大对象（Executor、StatementHandler
 
 MyBatis 插件要实现 Interceptor 接口，接口包含的方法，如下：
 
-```
+```java
 public interface Interceptor {
    Object intercept(Invocation invocation) throws Throwable;
    Object plugin(Object target);
@@ -1173,7 +1165,7 @@ public interface Interceptor {
 
 官方插件实现：
 
-```
+```java
 @Intercepts({@Signature(type = Executor. class, method = "query",
         args = {MappedStatement. class, Object. class, RowBounds. class, ResultHandler. class})})
 public class TestInterceptor implements Interceptor {
