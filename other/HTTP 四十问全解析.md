@@ -191,7 +191,7 @@ Range:bytes=1001-
 
 1.  HTML：Web 页面几乎都是由 HTML 写成的。
 2.  动态 HTML：是指使用客户端脚本语言将静态 HTML 变为动态的 HTML 的技术的总称。例如：客户端脚本语言 JavaScript 和指定于发生动态变化的 HTML 的 DOM 等。
-3.  Web 应用：如通过 Web 功能提供的应用程序；与 Web 服务器及程序协作的 CGI；因 Java 而普及的 Servletv 等。
+3.  Web 应用：如通过 Web 功能提供的应用程序；与 Web 服务器及程序协作的 CGI；因 Java 而普及的 Servlet 等。
 4.  数据发布格式及语言：如可扩展标记语言 XML；发布更新信息的 RSS 和 Atom；JavaScript 衍生的轻量级易用 JSON 等。
 
 #### 22. HTTP 协议无状态指什么？怎么才能将状态保存？
@@ -251,9 +251,9 @@ HTTP 协议的请求和响应报文中必定包含 HTTP 首部。首部内容为
 
 #### 2. 介绍一下 HTTP 首部字段，以及构成方式
 
-**首部字段的主要作用：**给浏览器和服务器提供一些必要信息，如报文主体 SIZE、语言类型、认证方式等内容。它是 HTTP 报文的组成要素之一。
+**首部字段的主要作用：** 给浏览器和服务器提供一些必要信息，如报文主体 SIZE、语言类型、认证方式等内容。它是 HTTP 报文的组成要素之一。
 
-**首部字段构成方式：**由字段名称和字段值组成，用冒号“:”分隔。例如：Content-type:text/html。首部字段可以有多个值组成。
+**首部字段构成方式：** 由字段名称和字段值组成，用冒号“:”分隔。例如：Content-type:text/html。首部字段可以有多个值组成。
 
 #### 3. 请介绍一下 HTTP 首部字段的类型有哪几种
 
@@ -307,11 +307,11 @@ HTTP 协议的请求和响应报文中必定包含 HTTP 首部。首部内容为
 
 *   通信加密：HTTP 协议加密机制缺失，但利用 SSL（SecureSocketLayer，安全套接层）或 TLS（TransportLayerSecurity，安全传输层协议）共同作用，加密 HTTP 的传输信息。
 
-![在这里插入图片描述](https://images.gitbook.cn/cf68cf70-2134-11ea-ac8f-1341eb8cd629#pic_center)![在这里插入图片描述](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)
+![](https://images.gitbook.cn/cf68cf70-2134-11ea-ac8f-1341eb8cd629#pic_center)
 
 *   内容加密：HTTP 协议不提供加密操作，因此 HTTP 协议传输的数据本身加密，把 HTTP 报文里所含的数据进行加密操作。但数据传输的过程中仍有数据被篡改的可能。
 
-**2. 使用 SSL 可以验证对方身份。**SSL 除了具备加密处理能力，还使用了称为证书的方法，可用于确定通信方。
+**2. 使用 SSL 可以验证对方身份。** SSL 除了具备加密处理能力，还使用了称为证书的方法，可用于确定通信方。
 
 **3. 可以使用 MD5 和 SHA1 等散列值校验的方法**，以及用来确认文件的数字签名方法。
 
